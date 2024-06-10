@@ -1,0 +1,23 @@
+{
+  "name": "masterz_solana_exam",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Emmanuele Bollino",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.92.3",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "keygen": "ts-node ./keygen.ts",
+    "airdrop": "ts-node ./airdrop.ts",
+    "createMint": "ts-node ./spl_init.ts",
+    "mintToken": "ts-node ./spl_mint.ts",
+    "transferToken": "ts-node ./spl_transfer.ts"
+  }
+}
